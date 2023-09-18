@@ -1,5 +1,8 @@
 const User = require("../models/userModel");
 const JWT = require("jsonwebtoken");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 //Protected Routes token base
 const requireSignIn = async (req, res, next) => {
